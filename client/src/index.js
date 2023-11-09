@@ -4,7 +4,8 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 import {createBrowserRouter, RouterProvider} from 'react-router-dom';
 import './index.css';
 import Home from './views/Home/Home';
-import CriminalFaceDetection from './views/CriminalFaceDetection/CriminalFaceDetection';
+import Signup from './views/Signup/Signup';
+
 
 
 
@@ -15,8 +16,8 @@ const router = createBrowserRouter([
     element: <Home/>
   },
   {
-    path: '/criminalFaceDetection',
-    element: <CriminalFaceDetection/>
+    path: '/signup',
+    element: <Signup/>
   },
 ])
 root.render(<RouterProvider router={router} />);
