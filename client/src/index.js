@@ -5,6 +5,8 @@ import {createBrowserRouter, RouterProvider} from 'react-router-dom';
 import './index.css';
 import Home from './views/Home/Home';
 import Signup from './views/Signup/Signup';
+import Login from './views/Login/Login';
+import CriminalForm from './views/CriminalForm/CriminalForm';
 
 
 
@@ -18,6 +20,14 @@ const router = createBrowserRouter([
   {
     path: '/signup',
     element: <Signup/>
+  },
+  {
+    path: '/login',
+    element: <Login/>
+  },
+  {
+    path: '/criminalForm',
+    element: <CriminalForm/>
   },
 ])
 root.render(<RouterProvider router={router} />);
