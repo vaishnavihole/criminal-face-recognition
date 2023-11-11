@@ -1,10 +1,10 @@
 import React, {useState, useEffect} from 'react';
-import './CriminalForm.css';
+import './MissingPerson.css';
 import axios from 'axios';
-import Navbar from '../../component/Navbar/Navbar';
+import Navbar from '../../component/Navbar/Navbar'
 // import Footer from '../../component/Footer/Footer';
 
-const CriminalForm = () => {
+const MissingPerson = () => {
   const [name, setName] = useState("");
   const [aliasName, setAliasName] = useState("");
   const [dob, setDob] = useState("");
@@ -56,8 +56,7 @@ const CriminalForm = () => {
     <>
     <Navbar />
     <div className="form-container">
-      <h2>Criminal Information Form</h2>
-
+      <h2>Missing Person Information Form</h2>
       <form>
   
 
@@ -125,30 +124,6 @@ const CriminalForm = () => {
               setAge(e.target.value)
             }}/>
           </div>
-
-          {/* <div>
-          <input type="radio"
-                id='male'
-                name='gender'
-                className='gender'
-                checked={gender === "male"}
-                onClick={()=>{
-                  setGender("male");
-                }}
-                />
-          <label htmlFor='male'>Male</label>
-
-          <input type="radio"
-                id='female'
-                name='gender'
-                className='gender'
-                checked={gender === "female"}
-                onClick={()=>{
-                  setGender("female");
-                }}
-                />
-          <label htmlFor='female'>Female</label>
-        </div> */}
         <div className="gender-container">
   <input
     type="radio"
@@ -232,5 +207,5 @@ const CriminalForm = () => {
   );
 };
 
-export default CriminalForm;
+export default MissingPerson;
 

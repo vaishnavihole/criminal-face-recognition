@@ -22,8 +22,7 @@ app.post("/criminalRecord", async (req, res) => {
     const {
         criminalID,
         address,
-        firstName,
-        lastName,
+        Name,
         city,
         state,
         aliasName,
@@ -36,8 +35,7 @@ app.post("/criminalRecord", async (req, res) => {
         const criminalRecord = new CriminalRecord({
             criminalID,
             address,
-            firstName,
-            lastName,
+            Name,
             city,
             state,
             aliasName,

@@ -7,6 +7,8 @@ import Home from './views/Home/Home';
 import Signup from './views/Signup/Signup';
 import Login from './views/Login/Login';
 import CriminalForm from './views/CriminalForm/CriminalForm';
+import FaceDetection from './views/FaceDetection/FaceDetection';
+import MissingPerson from './views/MissingPerson/MissingPerson';
 
 
 
@@ -25,9 +27,20 @@ const router = createBrowserRouter([
     path: '/login',
     element: <Login/>
   },
+
   {
     path: '/criminalForm',
     element: <CriminalForm/>
+  },
+
+  {
+    path: '/missingPerson',
+    element: <MissingPerson/>
+  },
+
+  {
+    path: '/faceDetection',
+    element: <FaceDetection/>
   },
 ])
 root.render(<RouterProvider router={router} />);
